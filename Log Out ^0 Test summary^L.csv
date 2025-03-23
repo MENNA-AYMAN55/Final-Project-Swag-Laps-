@@ -1,0 +1,69 @@
+﻿NUMBER ,TITLE ,STEPS,EXPECTED RESULT,STATUS 
+1,Verify successful logout,"1. Click on Log Out button. 
+2.Observe the system's behavior. ","The user should be
+  redirected to the login page. 
+The session should be terminated.
+ ",Pass 
+2," Verify session termination after 
+logout","1.Click on Log Out button. 
+2.Try navigation back using the browser
+back button.
+3. Refresh the page.","The user should not be
+ able to access the previous session.
+The system should be redirected to
+the  Log In page.
+
+
+",Fail
+3,"Verify logout across
+ multiple sessions/devices","1. Log Out from one device/ browser .
+2.Go to another device /browser  and 
+try refreshing the page.","The user should be Logged Out from
+all active sessions.",Pass 
+4," Verify logout during network
+ disconnection","1.Disconnect the internet.
+
+2.Click on Log Out button.","The user should still be
+ logged out once the connection 
+is restored.",Pass 
+,,,,
+5,Verify multiple logout attempts,"1. Click Log Out button. 
+2. Click Log Out again.","The second logout attempt should
+ not cause unexpected behavior.
+",Pass 
+,,,,
+6,"Logging Out While a Page is Still
+ Loading","1. Log in to the website. 
+2. Open a heavy page that takes time to load.
+3. Before the page finishes loading, quickly click Log Out.","The system should handle
+ the action gracefully without crashing.
+The user should still be logged out properly.
+",Pass
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,

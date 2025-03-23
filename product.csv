@@ -1,0 +1,44 @@
+﻿NUMBER ,TITLE ,STEPS,EXPECTED RESULT,STATUS 
+1," Social Media Logos Are Displayed
+ but Not Clickable","1. Open the website in a browser.
+2. Locate the social media logos (LinkedIn, Facebook, Twitter).","Clicking on the social media logos
+ should redirect the user to the respective
+ social media pages",Fail
+2, Footer Displays Incorrect Year (2020 Instead of 2025),"
+1. Open the website in a browser.
+2. Scroll down to the footer section.
+3. Observe the displayed year.",The footer should display the current year (2025).,Fail
+3,,,,
+4,,,,
+,,,,
+5,,,,
+,,,,
+6,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
