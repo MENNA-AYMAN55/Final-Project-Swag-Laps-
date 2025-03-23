@@ -1,0 +1,46 @@
+﻿NUMBER,TITLE,STEPS,EXPECTED RESULT ,STATUS
+1,"Verify that clicking on ""About"" redirects correctly","1. Open the  website.
+2. Click on the ""About"" text.","The company’s website should 
+open without any errors.",pass
+2,"Verify that ""About"" is visibly clickable","1. Hover over the ""About"" text.","The cursor should change to a pointer (hand icon), or the text should have a hover effect (e.g., underline, color change).",pass
+3,"Verify if ""About"" responds to clicks","1. Click on the ""About"" text.","The text should trigger an action (e.g., redirecting to another page).",Fail
+4,"Verify that ""About"" is accessible from different pages","1. Navigate to various sections 
+of the  website.
+2. Click on ""About"".
+ "," The action should work correctly
+ from all pages.",pass
+5," Check ""About"" behavior
+ on a slow network","1. Simulate a slow network.
+2. Click on ""About"".","The page should load within 
+an acceptable time, or a loading indicator 
+should appear.",pass
+6,"Verify that there are no
+ unexpected redirects","1. Click on ""About"".
+2. Observe the URL.","The page should not redirect to 
+any third-party or malicious sites.",pass
+7,"Verify that clicking ""About""
+ does not clear the shopping cart","1. Add items to the shopping cart.
+2. Click on ""About"".
+3. Return to the shopping site.
+","The shopping cart should still 
+contain the selected items.",pass
+8,"Verify that users can return
+ to the shopping site after clicking ""About""","1. Click on ""About"".
+2. Click the browser back button.","The user should return to the 
+shopping site without issues.",pass
+9,"Verify ""About"" functionality on
+ different browsers","1. Open the shopping site
+ on Chrome, Firefox and  
+ Edge
+2. Click on ""About""."," The functionality should work correctly 
+on all tested browsers.",pass
+10,"Verify ""About"" functionality
+ on different devices","1. Open the shopping site
+ on mobile and desktop.
+2. Click on ""About"".","The functionality should work 
+correctly on all devices.",pass
+11,"Check what happens when 
+clicking ""About"" while offline","1. Turn off the internet.
+2. Click on ""About""."," A proper error message should be
+ displayed, 
+ ""No internet connection.""",pass
