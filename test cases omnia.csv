@@ -1,0 +1,150 @@
+﻿,,Order confirmation,,,,,
+Number,Title,steps ,Expected Result,Execution,,,
+1,"Ensure that users are redirected to the order confirmation page after completing payment.
+Preconditions: User has completed checkout and payment successfully.","1-open the website.
+2-Enter your username(standard_user)
+3-Enter your password(secret_sauce)
+4-Log in to the website.
+5-Add products to the cart and proceed to checkout.
+6-Enter shipping and billing details.
+7-Complete the payment.",The user should be redirected to the order confirmation page with order details.,Pass ,,,
+2,"Ensure that the order confirmation page displays accurate order details.
+Preconditions: User has placed an order successfully","1-open the website.
+2-Enter your username(standard_user)
+3-Enter your password(secret_sauce)
+4-Log in to the website.
+5-Complete an order.
+6-Review the order confirmation page","The page should display the correct order number, product details, shipping address, and total amount paid.",Pass ,,,
+3,Ensure that the order confirmation page provides an estimated delivery date.,"1-open the website.
+2-Enter your username(standard_user)
+3-Enter your password(secret_sauce)
+4-Log in to the website.
+5-Complete an order.
+6-Check the estimated delivery date section.",The page should show an estimated delivery timeframe based on the shipping method chosen.,Pass ,,,
+4,Ensure that users can contact support if needed.,"1-open the website.
+2-Enter your username(standard_user)
+3-Enter your password(secret_sauce)
+4-Log in to the website.
+5-Complete an order.
+6-Look for customer support contact details on the confirmation page..","The page should provide an option to contact support via email, phone, or chat.",Pass ,,,
+5,Verify Order Confirmation Page Loads Successfully,"1-open the website.
+2-Enter your username(standard_user)
+3-Enter your password(secret_sauce)
+4-Log in to the website.
+5-Add items to the shopping cart.
+6-Proceed to checkout.
+7-Complete payment.
+8-Wait for the order confirmation page to load.","The order confirmation page should load, displaying the order number, item details, and confirmation message.",Fail,,,
+6,Verify Order Confirmation Email is Sent,"1-open the website.
+2-Enter your username(standard_user)
+3-Enter your password(secret_sauce)
+4-Log in to the website.
+5-Complete an order.
+6-Check the registered email inbox for the order confirmation email.",The user should receive an email with order details and confirmation,Fail,,,
+7,Verify Order Summary is Correct on Confirmation Page,"1-open the website.
+2-Enter your username(standard_user)
+3-Enter your password(secret_sauce)
+4-Log in to the website.
+5-Add multiple items to the cart.
+6-Complete the checkout process.
+7-Review the order details on the confirmation page.","The order confirmation page should display the correct item names, prices, quantities, and total amount.",Fail,,,
+8,"Verify Clicking ""View Order Details"" Navigates to Order History","1-open the website.
+2-Enter your username(standard_user)
+3-Enter your password(secret_sauce)
+4-Log in to the website.
+5-Complete an order.
+6-Click on the ""View Order Details"" button on the confirmation page.","The user should be redirected to their order history page, displaying the new order details.",Fail,,,
+9,Verify Order Confirmation Page is Accessible After Checkout,"1-open the website.
+2-Enter your username(standard_user)
+3-Enter your password(secret_sauce)
+4-Log in to the website.
+5-Place an order.
+6-Close the browser.
+7-Reopen the site and attempt to access the order confirmation page.",The order confirmation page should be accessible from the order history section,Fail,,,
+10,Verify Order Number is Generated and Displayed,"1-open the website.
+2-Enter your username(standard_user)
+3-Enter your password(secret_sauce)
+4-Log in to the website.
+5-Complete an order.
+6-Check the order confirmation page for an order number.",The page should display a unique order number for tracking purposes.,Fail,,,
+11,Verify Order Confirmation Page Shows Estimated Delivery Date,"1-open the website.
+2-Enter your username(standard_user)
+3-Enter your password(secret_sauce)
+4-Log in to the website.
+5-Complete an order.
+6-Check the confirmation page for an estimated delivery date.",The page should display an estimated delivery date based on shipping method.,Fail,,,
+12,Verify Order Confirmation Page Shows Payment Details,"1-open the website.
+2-Enter your username(standard_user)
+3-Enter your password(secret_sauce)
+4-Log in to the website.
+5-Complete an order with a specific payment method (credit card, PayPal).
+6-Check the confirmation page for payment details.","The page should display the payment method and confirmation of successful payment.
+Actual Result:",Fail,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,Bug report,,,,
+Number,Titel ,steps ,Expected Result, Actual result,screen shot ,Priority,saviority
+1,Verify Order Confirmation Page Loads Successfully,"1-open the website.
+2-Enter your username(standard_user)
+3-Enter your password(secret_sauce)
+4-Log in to the website.
+5-Add items to the shopping cart.
+6-Proceed to checkout.
+7-Complete payment.
+8-Wait for the order confirmation page to load.","The order confirmation page should load, displaying the order number, item details, and confirmation message.","The page does not load, and the user is stuck on the checkout page.",,High ,Critical
+2,Verify Order Confirmation Email is Sent,"1-open the website.
+2-Enter your username(standard_user)
+3-Enter your password(secret_sauce)
+4-Log in to the website.
+5-Complete an order.
+6-Check the registered email inbox for the order confirmation email.",The user should receive an email with order details and confirmation,No confirmation email is received even after waiting for 30 minutes.,,High ,Major 
+3,Verify Order Summary is Correct on Confirmation Page,"1-open the website.
+2-Enter your username(standard_user)
+3-Enter your password(secret_sauce)
+4-Log in to the website.
+5-Add multiple items to the cart.
+6-Complete the checkout process.
+7-Review the order details on the confirmation page.","The order confirmation page should display the correct item names, prices, quantities, and total amount.",The order summary displays incorrect item details and an incorrect total price,,High ,Critical 
+4,"Verify Clicking ""View Order Details"" Navigates to Order History","1-open the website.
+2-Enter your username(standard_user)
+3-Enter your password(secret_sauce)
+4-Log in to the website.
+5-Complete an order.
+6-Click on the ""View Order Details"" button on the confirmation page.","The user should be redirected to their order history page, displaying the new order details.","Clicking the button does nothing, and the user remains on the confirmation page.",,Medium ,Major 
+5,Verify Order Confirmation Page is Accessible After Checkout,"1-open the website.
+2-Enter your username(standard_user)
+3-Enter your password(secret_sauce)
+4-Log in to the website.
+5-Place an order.
+6-Close the browser.
+7-Reopen the site and attempt to access the order confirmation page.",The order confirmation page should be accessible from the order history section,"The confirmation page is unavailable, displaying a ""Page Not Found"" error.",,High ,Major 
+6,Verify Order Number is Generated and Displayed,"1-open the website.
+2-Enter your username(standard_user)
+3-Enter your password(secret_sauce)
+4-Log in to the website.
+5-Complete an order.
+6-Check the order confirmation page for an order number.",The page should display a unique order number for tracking purposes.,"No order number is shown, making it impossible to track the purchase.",,High ,Critical 
+7,Verify Order Confirmation Page Shows Estimated Delivery Date,"1-open the website.
+2-Enter your username(standard_user)
+3-Enter your password(secret_sauce)
+4-Log in to the website.
+5-Complete an order.
+6-Check the confirmation page for an estimated delivery date.",The page should display an estimated delivery date based on shipping method.,No estimated delivery date is provided.,,Medium ,Major 
+8,Verify Order Confirmation Page Shows Payment Details,"1-open the website.
+2-Enter your username(standard_user)
+3-Enter your password(secret_sauce)
+4-Log in to the website.
+5-Complete an order with a specific payment method (credit card, PayPal).
+6-Check the confirmation page for payment details.","The page should display the payment method and confirmation of successful payment.
+Actual Result:","The payment details are missing, and it is unclear whether the payment was processed.",,High ,Critical 
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,Test summary,,,,
+,Worked by,Cases,Fail Cases,Pass Cases,Bug Report,,
+,Omnia Magdy,12,8,4,8,,
