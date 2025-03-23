@@ -1,0 +1,274 @@
+﻿,,,SWAG LAPS ,,,,,
+,,,,,,,,
+,,,,,,,,
+,Number,Tittl,steps,expected result,pass/fail,,,
+,1," Verify successful checkout for a standard _ user at swage laps Website in check out page,enter valid first name , valid last name and valid postal code  ","1. Open swage laps Website
+2. In login page, enter standard_user in user name   field,enter secret_sauce in password field
+3. Choose 2 products from  Products page 
+4. Click on cart button, click on checkout button 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71835
+8. Click on continue button 
+",fields accept values without error and show the overview  screen ,pass,,,
+,2," Verify checkout process for  performance_glitch_user at swage laps Website in check out page,enter valid first name , valid last name and valid postal code(5digit)","1. Open swage laps Website
+2. In login page, enter  performance_glitch_user in user name   field,enter secret_sauce in password field.
+3. Choose 2 products from  Products page
+4. Click on cart button, click on checkout button. 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71835
+8. Click on continue button 
+",fields accept values without error and show the overview  screen ,pass,,,
+,3,"Verify checkout process for problem_user at swage laps Website in check out page,enter valid first name , valid last name and valid postal code","1. Open swage laps Website
+2. In login page, enter problem_user in user name   field,enter secret_sauce in password field.
+3. Choose 2 products from  Products page
+4. Click on cart button, click on checkout button. 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71835
+8. Click on continue button 
+",fields accept values without error and show the overview  screen ,pass,,,
+,4,Logged in as standard_user Verify user can add/remove items from the cart during checkout,"1. Open swage laps Website
+2. In login page, enter standard_user in user name field,enter secret_sauce in password field
+3. Choose 2 products from  Products page 
+4. Click on cart button, click on checkout button 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71578
+8. Proceed to checkout
+9. Go back to the cart and remove an item
+10. Return to checkout",Cart should update dynamically,pass,,,
+,5,Logged in as standard_user Verify checkout flow with maximum cart capacity,"1. Open swage laps Website
+2. In login page, enter  performance_glitch_user in user name   field,enter secret_sauce in password field.
+3.  Add the maximum allowed products to the cart
+4. Click on cart button, click on checkout button. 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71835
+8. Click on continue button 
+",Checkout should proceed without performance issues,pass,,,
+,6,Logged in as standard_user Verify checkout form fields support copy-paste functionality ,"1. Open swage laps Website
+2. In login page, enter  performance_glitch_user in user name   field,enter secret_sauce in password field.
+3.  Add the maximum allowed products to the cart
+4. Click on cart button, click on checkout button.             
+5.  Copy valid data from another document    6.Paste it into checkout fields                             7.In first name field enter Menna 
+8. In last name field enter Ayman 
+9. In postal code field enter 71835
+10. Click on continue button 
+",Form should allow copy-pasting without issues,pass,,,
+,7,"Verify checkout failure for locked_out_user at swage laps Website in check out page,enter valid first name , valid last name and valid postal code","1. Open swage laps Website
+2. In login page, enter locked_out_user in user name field,enter secret_sauce in password field.
+3. Choose 2 products from  Products page
+4. Click on cart button, click on checkout button. 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71835
+8. Click on continue button 
+",fields accept values without error and show the overview  screen ,fail,,,
+,8,Logged in as standard_user Verify invalid ZIP/Postal Code handling (3digit) with valid first name and valid last name ,"1. Open swage laps Website
+2. In login page, enter standard_user in user name field,enter secret_sauce in password field
+3. Choose 2 products from  Products page 
+4. Click on cart button, click on checkout button 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 115
+8. Click on continue button 
+",fields accept values with error and don’t show the overview  screen ,fail,,,
+,9,Logged in as standard_user Verify invalid ZIP/Postal Code handling (8digit) with valid first name and valid last name ,"1. Open swage laps Website
+2. In login page, enter standard_user in user name field,enter secret_sauce in password field
+3. Choose 2 products from  Products page 
+4. Click on cart button, click on checkout button 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71570468
+8. Click on continue button 
+",fields accept values with error and don’t show the overview  screen ,fail,,,
+,10,Logged in as standard_user Verify checkout with special characters in First/Last Name and invalid ZIP/Postal Code ,"1. Open swage laps Website
+2. In login page, enter standard_user in user name field,enter secret_sauce in password field
+3. Choose 2 products from  Products page 
+4. Click on cart button, click on checkout button 
+5. In first name field enter @&#$r
+6. In last name field enter *&
+7. In postal code field enter p
+8. Click on continue button 
+",System should validate and prevent invalid inputs,fail,,,
+,11,Logged in as standard_user Verify checkout process with long input values in fields,"1. Open swage laps Website
+2. In login page, enter standard_user in user name field,enter secret_sauce in password field
+3. Choose 2 products from  Products page 
+4. Click on cart button, click on checkout button 
+5. In first name field enter a long string (100+ characters)
+6. In last name field enter a long string (100+ characters)
+7. In postal code field enter 71033
+8. Click on continue button 
+",The system should trim input or show an error,fail,,,
+,12,Logged in as standard_user Verify error message when leaving required fields blank,"1. Open swage laps Website
+2. In login page, enter standard_user in user name field,enter secret_sauce in password field
+3. Choose 2 products from  Products page 
+4. Click on cart button, click on checkout button 
+5.leave first name field blank
+6.leave last name field blank
+7. leave postal code field blank
+8. Click on continue button 
+",System should display an error message on all Component ,fail,,one one component ,
+,13,Logged in as standard_user Verify checkout button is disabled if no items are in the cart,"1. Open swage laps Website
+2. In login page, enter standard_user in user name field,enter secret_sauce in password field
+3. Ensure the cart is empty
+4. Navigate to the checkout page
+",Checkout button should be disabled,fail,,,
+,14,"Logged in as problem_user Verify error handling when the checkout page is refreshed during payment 
+","1. Open swage laps Website
+2. In login page, enter problem_user in user name   field,enter secret_sauce in password field
+3. Choose 2 products from  Products page 
+4. Click on cart button, click on checkout button 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71835
+8. Click on continue button 
+9.click on checkout button                                      10.Navigate back and try to modify the cart                                 ",System should not duplicate or lose the order,fail,,,
+,15,"Logged in as standard_user Verify user cannot edit cart after reaching the payment page
+","1. Open swage laps Website
+2. In login page, enter standard_user in user name   field,enter secret_sauce in password field
+3. Choose 2 products from  Products page 
+4. Click on cart button, click on checkout button 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71835
+8. Click on continue button 
+9.click on checkout button                                      10.Navigate back and try to modify the cart                                 ",Cart should be locked at the payment stage,pass,,,
+,16,"Logged in as standard_user Verify checkout process when browser cache is cleared mid-session 
+
+","1. Open swage laps Website
+2. In login page, enter standard_user in user name   field,enter secret_sauce in password field
+3. Choose 2 products from  Products page 
+4. Click on cart button, click on checkout button 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71835
+8. Click on continue button 
+9. Clear browser cache & cookies                          10. Try to complete checkout System should ask the user to re-login",System should ask the user to re-login,fail,,,
+,17," Verify checkout process when switching accounts mid-session Two user accounts are available
+","1. Open swage laps Website
+2. In login page, Logged in as standard_user    ,enter secret_sauce in password field
+3. Choose 2 products from  Products page 
+4. Click on cart button, click on checkout button 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71835
+8. Click on continue button 
+9.Log out and log in as problem_user  ",Check  Cart should be reset for the new user,fail,,,
+,18,"Logged in as standard_user Verify correct total price for bulk purchases 
+","1. Open swage laps Website
+2. In login page, enter standard_user in user name   field,enter secret_sauce in password field
+3. Add multiple quantities of a products(6product) from  Products page 
+4. Click on cart button, click on checkout button 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71835
+8. Click on continue button 
+9.verify price calculation in checkout Price ",should match quantity product unit price,pass,,,
+,19,"Logged in as problem_user Verify correct total price for bulk purchases 
+","1. Open swage laps Website
+2. In login page, enter standard_user in user name   field,enter secret_sauce in password field
+3. Add multiple quantities of a products(6product) from  Products page 
+4. Click on cart button, click on checkout button 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71835
+8. Click on continue button 
+9.verify price calculation in checkout Price ",should match product unit price,fail,,,
+,20,"Logged in as standard_user Verify correct total price for bulk purchases 
+","1. Open swage laps Website
+2. In login page, enter standard_user in user name   field,enter secret_sauce in password field
+3. Add multiple quantities of a products(6product) from  Products page 
+4. Click on cart button, click on checkout button 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71835
+8. Click on continue button 
+9.Verify tax calculations  ",Tax should be correctly applied as per store policy,pass,,,
+,21,"Logged in as problem_user Verify correct total price for bulk purchase
+","1. Open swage laps Website
+2. In login page, enter standard_user in user name   field,enter secret_sauce in password field
+3. Add multiple quantities of a products(6product) from  Products page 
+4. Click on cart button, click on checkout button 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71835
+8. Click on continue button 
+9.Verify tax calculations  ",Tax should be correctly applied as per store policy,fail,,,
+,22,"Logged in as standard_user Verify total price updates correctly after removing an item 
+","1. Open swage laps Website
+2. In login page, enter standard_user in user name   field,enter secret_sauce in password field
+3. Add multiple quantities of a products(6product) from  Products page 
+4. Click on cart button, click on checkout button 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71835
+8. Remove one product before checkout  
+9.Click on continue button ",Total price should update correctly,pass,,,
+,23,"Logged in as standard_user VVerify Finish button is disabled after order completion User is on the checkout summary page 1. Click ""Finish"" multiple times Button should be disabled after first click
+","1. Open swage laps Website
+2. In login page, enter standard_user in user name   field,enter secret_sauce in password field
+3. Choose 2 products from  Products page 
+4. Click on cart button, click on checkout button 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71835
+8. Click on continue button 
+9.Click ""Finish""  ",Button should be disabled after first click,pass,,,
+,24,"Logged in as standard_user Verify checkout functionality across different browsers 
+","1. Open swage laps Website
+2. In login page, enter standard_user in user name   field,enter secret_sauce in password field
+3. Choose 2 products from  Products page 
+4. Click on cart button, click on checkout button 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71835
+8. Click on continue button 
+9.Repeat checkout process on Chrome, Firefox, Edge, Safari ",Checkout should work consistently across all browsers,pass,,,
+,33,"Logged in as standard_user Verify that order history is updated after successful checkout 
+
+","1. Open swage laps Website
+2. In login page, enter standard_user in user name   field,enter secret_sauce in password field
+3. Choose 2 products from  Products page 
+4. Click on cart button, click on checkout button 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71835
+8. Click on continue button 
+9.Check order history page",Order should be listed correctly,pass,,,
+,34,"Logged in as standard_user Verify error handling when checkout form submission is interrupted 
+
+","1. Open swage laps Website
+2. In login page, enter standard_user in user name   field,enter secret_sauce in password field
+3. Choose 2 products from  Products page 
+4. Click on cart button, click on checkout button 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71835
+8. Click on continue button 
+9. Disconnect from the internet                                10.Try to complete checkout","System should display an error and allow retrying
+",pass,,,
+,35,"Logged in as standard_user Verify checkout completion message format 
+
+
+","1. Open swage laps Website
+2. In login page, enter standard_user in user name   field,enter secret_sauce in password field
+3. Choose 2 products from  Products page 
+4. Click on cart button, click on checkout button 
+5. In first name field enter Menna 
+6. In last name field enter Ayman 
+7. In postal code field enter 71835
+8. Click on continue button 
+9.Observe order confirmation message ", Message should be clear and correctly formatted,pass,,,
+,,,,,,,,
+,,,TEST SUMMARY,,,,,
+,  ,user story name  ,tester name,number of test case,number of pass\fail test case ,number of bugs  ,,
+,,CHECKOUT PAGE ,MENNAT ALLAH AYMAN HASSAN,35,15 PASS       20 FAIL,13,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
